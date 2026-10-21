@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harish R | Java Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Harish R, a fresher Java Full Stack Developer.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+
+<!-- NAVIGATION (mobile menu works with a checkbox; script.js only closes it after a click) -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="logo" href="#home" aria-label="Harish R, home"><span class="logo__mark">HR</span> Harish R</a>
+    <input type="checkbox" id="menu-toggle" class="nav__check" aria-label="Toggle menu">
+    <label for="menu-toggle" class="nav__burger" aria-hidden="true"><span></span></label>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--small" href="#contact">Get in Touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="blob blob--a"></div><div class="blob blob--b"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="hero__hello">Hi, I'm</p>
+      <h1>Harish R</h1>
+      <p class="hero__role">Java Full Stack Developer</p>
+      <p class="hero__intro">A fresher who builds web applications with Core Java, JDBC, HTML5, CSS3 and MySQL, and is keen to grow through real project work.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+    <!-- CSS-only developer illustration (replace with a photo if you like) -->
+    <div class="hero__art" role="img" aria-label="Illustration of a code editor window showing a Java class">
+      <div class="editor">
+        <div class="editor__bar"><i></i><i></i><i></i><b>Portfolio.java</b></div>
+        <div class="editor__body">
+          <p><span class="k">public class</span> <span class="c">Harish</span> {</p>
+          <p class="in"><span class="k">String</span> role = <span class="s">"Java Full Stack"</span>;</p>
+          <p class="in"><span class="k">String</span> db = <span class="s">"MySQL"</span>;</p>
+          <p class="in"><span class="k">void</span> <span class="c">learn</span>() { <span class="cm">/* always */</span> }</p>
+          <p>}</p>
+        </div>
+      </div>
+      <div class="chip chip--1">Java</div><div class="chip chip--2">MySQL</div><div class="chip chip--3">HTML5</div>
+    </div>
+  </div>
+  <a class="scroll" href="#about" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="about">
+      <article class="card profile">
+        <img class="avatar" src="harish.jpg" alt="Portrait of Harish R" width="140" height="140">
+        <h3>Harish R</h3>
+        <p class="muted">Java Full Stack Developer</p>
+        <ul class="facts">
+                    <li><b>Email</b> <a href="mailto:harishmpmp21@gmail.com">harishmpmp21@gmail.com</a></li>
+        </ul>
+      </article>
+      <div class="about__text">
+        <blockquote class="card objective">To start my career as a Java Full Stack Developer applying my knowledge of Core Java, JDBC, HTML5, CSS3, and MySQL to build reliable web applications.</blockquote>
+        <p>I am a motivated, detail-oriented fresher with beginner-level HTML5 and CSS3, and working knowledge of Core Java and MySQL. I like problem-solving, learn quickly, and work well in a team.</p>
+        <div class="stats">
+          <div class="card stat"><b>2026</b><span>B.E. graduate</span></div>
+          <div class="card stat"><b>7.47</b><span>CGPA</span></div>
+          <div class="card stat"><b>Java</b><span>Primary language</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section--alt">
+  <div class="wrap">
+    <h2>Technical skills</h2>
+    <p class="note">The bars are decorative only. They are not a measure of proficiency.</p>
+    <div class="skill-groups">
+      <div>
+        <h3>Frontend</h3>
+        <div class="skill-row">
+          <article class="card skill"><span class="icon">&lt;/&gt;</span><h4>HTML5</h4><div class="bar" aria-hidden="true"><i style="--w:60%"></i></div></article>
+          <article class="card skill"><span class="icon">{ }</span><h4>CSS3</h4><div class="bar" aria-hidden="true"><i style="--w:55%"></i></div></article>
+        </div>
+      </div>
+      <div>
+        <h3>Backend</h3>
+        <div class="skill-row">
+          <article class="card skill"><span class="icon">J</span><h4>Core Java</h4><div class="bar" aria-hidden="true"><i style="--w:70%"></i></div></article>
+          <article class="card skill"><span class="icon">DB</span><h4>JDBC</h4><div class="bar" aria-hidden="true"><i style="--w:55%"></i></div></article>
+          <article class="card skill"><span class="icon">S</span><h4>Servlets</h4><div class="bar" aria-hidden="true"><i style="--w:45%"></i></div></article>
+          <article class="card skill"><span class="icon">JSP</span><h4>JSP</h4><div class="bar" aria-hidden="true"><i style="--w:45%"></i></div></article>
+        </div>
+      </div>
+      <div>
+        <h3>Database</h3>
+        <div class="skill-row">
+          <article class="card skill"><span class="icon">SQL</span><h4>MySQL</h4><div class="bar" aria-hidden="true"><i style="--w:65%"></i></div></article>
+        </div>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <div class="skill-row">
+          <article class="card skill"><span class="icon">E</span><h4>Eclipse IDE</h4><div class="bar" aria-hidden="true"><i style="--w:60%"></i></div></article>
+          <article class="card skill"><span class="icon">VS</span><h4>VS Code</h4><div class="bar" aria-hidden="true"><i style="--w:60%"></i></div></article>
+          <article class="card skill"><span class="icon">WB</span><h4>MySQL Workbench</h4><div class="bar" aria-hidden="true"><i style="--w:55%"></i></div></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li class="tl">
+        <span class="tl__dot tl__dot--live"></span>
+        <article class="card">
+          <p class="date">June 2026 – Present</p>
+          <h3>Java Full Stack Developer Intern</h3>
+          <p class="muted">TAP Academy</p>
+          <ul class="ph-list">
+            <li class="ph">[Placeholder: technologies you are learning, such as Core Java, JDBC, Servlets, JSP, MySQL.]</li>
+            <li class="ph">[Placeholder: mini projects or exercises you have completed.]</li>
+            <li class="ph">[Placeholder: your day-to-day work, such as coding practice and assignments.]</li>
+          </ul>
+        </article>
+      </li>
+      <li class="tl">
+        <span class="tl__dot"></span>
+        <article class="card">
+          <p class="date">August 2025 – September 2025</p>
+          <h3>Full Stack Development Trainee</h3>
+          <p class="muted">NoviTech R&amp;D Private Limited</p>
+          <ul>
+            <li>Hands-on training in HTML, CSS, Core Java and MySQL.</li>
+            <li>Built and structured web applications in guided project work, including basic CRUD operations and database connectivity.</li>
+            <li>Worked with peers on assigned modules.</li>
+          </ul>
+        </article>
+      </li>
+      <li class="tl">
+        <span class="tl__dot"></span>
+        <article class="card">
+          <p class="date">July 2025</p>
+          <h3>Digital Circuit Design Intern</h3>
+          <p class="muted">National Institute of Technology, Tiruchirappalli (NIT Trichy)</p>
+          <ul>
+            <li>4-week internship on decoders, multiplexers, shift registers and an ALU using Verilog HDL.</li>
+            <li>Simulated and verified designs in Xilinx Vivado.</li>
+          </ul>
+        </article>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section--alt">
+  <div class="wrap">
+    <h2>Featured projects</h2>
+    <div class="projects">
+      <article class="project">
+        <div class="project__inner">
+          <div class="thumb thumb--a" role="img" aria-label="Illustration of a job listing with a verification shield">
+            <div class="thumb__art"><span class="shield">&#10003;</span><i></i><i></i><i></i></div>
+          </div>
+          <div class="project__body">
+            <p class="badge">Planned project</p>
+            <h3>Smart Jobs Scam Detection and Verification Portal</h3>
+            <p>A planned web portal to help job seekers check whether a job posting looks genuine. Not yet confirmed as implemented.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>Core Java</li><li>MySQL</li></ul>
+            <div class="project__btns">
+              <a class="btn btn--small" href="#" aria-disabled="true">Live Demo (add URL)</a>
+              <a class="btn btn--small btn--ghost" href="#" aria-disabled="true">Source Code (add URL)</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="project project--empty">
+        <div class="project__inner">
+          <div class="thumb thumb--c" aria-hidden="true"><div class="thumb__art"><span class="plus">+</span></div></div>
+          <div class="project__body">
+            <p class="badge">Placeholder</p>
+            <h3>Your next project</h3>
+            <p class="ph">[Placeholder: add title, description, tags and links.]</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="wrap">
+    <h2>Education</h2>
+    <article class="card edu">
+      <div class="edu__year">2022<br>2026</div>
+      <div>
+        <h3>B.E., Electronics and Communication Engineering</h3>
+        <p class="muted">University College of Engineering, Dindigul, Anna University</p>
+        <p class="cgpa">CGPA 7.47</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section--alt">
+  <div class="wrap contact">
+    <div>
+      <h2>Get in touch</h2>
+      <p>Hiring or want to collaborate? Send a message or write to me directly.</p>
+      <ul class="links">
+        <li><a href="mailto:harishmpmp21@gmail.com">harishmpmp21@gmail.com</a></li>
+        <li><a href="https://github.com/harishmpm21-collab" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/harish-r-b1994429b" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+      <p class="note">
+        <b>Heads up:</b> this form only collects input. HTML cannot send email by itself. To make it work, point <code>action</code> to a form service (such as Formspree or Getform), or to a Java Servlet (for example <code>action="contact"</code> with <code>method="post"</code>) that reads the fields with <code>request.getParameter()</code> and sends mail with JavaMail or saves to MySQL with JDBC.
+      </p>
+    </div>
+    <!-- Replace action="#" with your form service URL or servlet path -->
+    <form class="card form" action="#" method="post">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" required placeholder="What is this about?">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Write your message"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div><b>Harish R</b><p class="muted">Java Full Stack Developer</p></div>
+    <nav aria-label="Footer">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="footer__social"><a href="mailto:harishmpmp21@gmail.com">Email</a> <a href="https://github.com/harishmpm21-collab" target="_blank" rel="noopener">GitHub</a> <a href="https://www.linkedin.com/in/harish-r-b1994429b" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+  <p class="copy">&copy; 2026 Harish R. All rights reserved.</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
