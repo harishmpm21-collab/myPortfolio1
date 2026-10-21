@@ -200,3 +200,29 @@ code{font-family:var(--mono);font-size:.88em;color:var(--accent)}
 .nav__links a[aria-current="true"]:not(.btn){color:var(--text);background:rgba(77,214,232,.14);box-shadow:inset 0 -2px 0 var(--accent)}
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(360px circle at var(--mx,70%) var(--my,30%),rgba(77,214,232,.10),transparent 70%)}
 @media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none}.js .bar:not(.is-visible) i{width:var(--w)}}
+
+/* ===== Logo tiles ===== */
+.icon-img{display:block;width:52px;height:52px;padding:9px;margin-bottom:.8rem;border-radius:14px;background:rgba(255,255,255,.95);transition:transform .25s}
+.skill:hover .icon-img{transform:rotate(-8deg) scale(1.08)}
+
+/* ===== Navigation: every item is its own pill, always visible ===== */
+.nav__check,.nav__burger{display:none!important}
+.nav__links a:not(.btn){border:1px solid var(--line)}
+@media (max-width:900px){
+  html{scroll-padding-top:116px}
+  .nav__inner{flex-wrap:wrap;height:auto;padding:.5rem 0 .6rem;row-gap:.4rem}
+  .nav__links,.nav__check:checked ~ .nav__links{display:flex;position:static;flex-direction:row;align-items:center;width:100%;overflow-x:auto;padding:0 0 .3rem;background:none;border:0;gap:.5rem;-webkit-overflow-scrolling:touch}
+  .nav__links a{flex:0 0 auto;white-space:nowrap}
+  .nav__links .btn{margin:0}
+  .hero{padding-top:9rem}
+}
+
+/* ===== Experience: sideways, draggable ===== */
+.timeline{display:flex;gap:1.5rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 1.5rem;cursor:grab;scrollbar-color:var(--accent) transparent}
+.timeline::before{display:none}
+.timeline.is-dragging{cursor:grabbing;user-select:none;scroll-snap-type:none}
+.tl{flex:0 0 min(400px,85%);scroll-snap-align:start;padding-top:2.4rem}
+.tl::before{content:"";position:absolute;top:11px;left:0;right:-1.5rem;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.tl:last-child::before{right:0;background:linear-gradient(90deg,var(--accent2),transparent)}
+.tl__dot{left:0;top:0}
+.tl .card{height:100%}

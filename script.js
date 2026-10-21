@@ -12,7 +12,7 @@
   });
 
   /* 2. Reveal cards and fill skill bars when they scroll into view */
-  var reveals = document.querySelectorAll('.card, .project, .tl');
+  var reveals = Array.prototype.filter.call(document.querySelectorAll('.card, .project'), function (el) { return !el.closest('.timeline'); });
   var bars = document.querySelectorAll('.bar');
   reveals.forEach(function (el) { el.classList.add('reveal'); });
   if ('IntersectionObserver' in window && !reduce) {
@@ -26,6 +26,22 @@
   } else {
     reveals.forEach(function (el) { el.classList.add('is-visible'); });
     bars.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* 2b. Drag the experience timeline sideways with the mouse */
+  var track = document.querySelector('.timeline');
+  if (track) {
+    var down = false, startX = 0, startLeft = 0;
+    track.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse') return;
+      down = true; startX = e.clientX; startLeft = track.scrollLeft;
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      track.classList.add('is-dragging');
+      track.scrollLeft = startLeft - (e.clientX - startX);
+    });
+    window.addEventListener('pointerup', function () { down = false; track.classList.remove('is-dragging'); });
   }
 
   /* 3. Highlight the nav link of the section being viewed */
